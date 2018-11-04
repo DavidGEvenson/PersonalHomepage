@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0bd8b6b4-de93-4f8f-8d5c-a64be3d57e7e" name="homepage" url="http://cse.msu.edu/~evenson6/">
+        <fileTransfer host="black.cse.msu.edu" port="22" rootFolder="/user/evenson6/web" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

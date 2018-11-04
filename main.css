@@ -1,0 +1,193 @@
+/**
+    Reset block
+ */
+html, body, header, footer, hgroup, nav, article, section,
+figure, figcaption, h1, h2, h3, ul, li, body, div, p, img {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    border: 0;
+}
+
+body {
+    background: url("SpartyBW2.jpg") no-repeat fixed center;
+    background-size: 100%;
+}
+
+p, li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/** Header **/
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #1C1C1C;
+}
+
+header div {
+    margin: 1em 4em 0 4em;
+    padding: .5em 1em .5em 1em;
+    border-radius: 3px;
+}
+
+.home {
+    width: 8em;
+    text-align: left;
+    float: left;
+}
+
+.links {
+    text-align: right;
+    float: right;
+}
+
+.links p {
+    display: inline;
+}
+
+header a {
+    padding: .5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+/** Title box **/
+
+.CenterTitle {
+    text-align: center;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+.CenterTitle h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    color: black;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.CenterTitle h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: black;
+    padding-top: 10px;
+}
+
+/** Body area **/
+
+.anchor {
+    position: absolute;
+    top: -40px;
+}
+
+.MainContainer {
+    position: relative;
+    text-align: center;
+    min-height: 300px;
+    padding: 20px;
+}
+
+.MainContainer h2 {
+    padding-bottom: 30px;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.OuterContentBox {
+    margin: auto;
+    max-width: 900px;
+    overflow: auto;
+}
+
+#ResumeBox {
+    background-color: white;
+}
+
+#ProjectsBox {
+    background-color: #3F5944;
+}
+
+#ConnectBox {
+    background-color: lightgrey;
+}
+
+/** Resume **/
+
+#ProfileHeader {
+    padding-top: 30px;
+}
+
+#ProfilePictureBox {
+    float: left;
+}
+
+#ProfilePicture {
+    border-radius: 50%;
+}
+
+#AboutMe {
+    padding-top: 30px;
+    float: right;
+    max-width: 650px;
+    text-align: left;
+}
+
+#ResumeBox h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+.SectionHeaders {
+    padding-top: 50px;
+    clear: both;
+}
+
+.Rows {
+    clear: both;
+    padding-top: 30px;
+}
+
+.SectionHeaders h3 {
+    padding: 0 20px 10px 20px;
+    border-bottom: lightgrey solid 2px;
+    margin-bottom: 20px;
+}
+
+.Left {
+    float: left;
+    width: 250px;
+    text-align: left;
+    padding-left: 20px;
+    border-right: lightgrey solid 1px;
+}
+
+.Left p {
+    padding-bottom: .15em;
+}
+
+.Right {
+    float: right;
+    max-width: 600px;
+    text-align: left;
+}
+
+.Right p, .Right li {
+    padding-bottom: .25em;
+}
+
+/** Footer **/
+
+footer {
+    background-color: #1C1C1C;
+    min-height: 40px;
+}
