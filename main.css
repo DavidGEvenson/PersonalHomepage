@@ -61,8 +61,8 @@ header a {
 
 .CenterTitle {
     text-align: center;
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 30vh;
+    height: 70vh;
 }
 
 .CenterTitle h1 {
@@ -183,6 +183,11 @@ header a {
 
 .Right p, .Right li {
     padding-bottom: .25em;
+}
+
+#icons p {
+    display: inline;
+    padding: 20px 10px 20px 10px;
 }
 
 /** Footer **/
