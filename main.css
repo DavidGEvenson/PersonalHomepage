@@ -225,6 +225,7 @@ header a {
     width: 800px;
     margin: auto;
     display: none;
+    min-height: 450px;
 }
 
 .ProjectSlide h3 {
@@ -232,6 +233,10 @@ header a {
     padding-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+}
+
+#MoreToCome {
+    padding-top: 150px;
 }
 
 .ProjectDescription {
@@ -255,6 +260,19 @@ header a {
 
 .Next {
     float: right;
+}
+
+.Dot {
+    background-color: whitesmoke;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.Dot:hover {
+    cursor: pointer;
 }
 
 /** Connect **/
