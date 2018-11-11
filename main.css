@@ -57,6 +57,23 @@ header a {
     text-decoration: none;
 }
 
+@keyframes HeaderHover {
+    100% { background-color: dimgrey; }
+}
+
+@-webkit-keyframes HeaderHover {
+    100% { background-color: dimgrey; }
+}
+
+.links a:hover {
+    animation-name: HeaderHover;
+    animation-duration: .6s;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: HeaderHover;
+    -webkit-animation-duration: .6s;
+    -webkit-animation-fill-mode: forwards;
+}
+
 /** Title box **/
 
 .CenterTitle {
@@ -147,6 +164,14 @@ header a {
     font-size: 24px;
 }
 
+#Education a {
+    text-decoration: none;
+}
+
+#Education a:hover {
+    text-decoration: underline;
+}
+
 .SectionHeaders {
     padding-top: 50px;
     clear: both;
@@ -165,7 +190,7 @@ header a {
 
 .Left {
     float: left;
-    width: 250px;
+    width: 270px;
     text-align: left;
     padding-left: 20px;
     border-right: lightgrey solid 1px;
@@ -177,12 +202,65 @@ header a {
 
 .Right {
     float: right;
-    max-width: 600px;
+    width: 580px;
+    padding-left: 28px;
     text-align: left;
 }
 
 .Right p, .Right li {
     padding-bottom: .25em;
+}
+
+#BottomSpace {
+    height: 20px;
+}
+
+/** Project **/
+
+#ProjectsBox h2 {
+    color: white;
+}
+
+.ProjectSlide {
+    width: 800px;
+    margin: auto;
+    display: none;
+}
+
+.ProjectSlide h3 {
+    color: white;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.ProjectDescription {
+    padding: 20px;
+    color: white;
+}
+
+.Arrow {
+    color: white;
+    font-size: 50px;
+    padding: 140px 30px 0 30px;
+}
+
+.Arrow:hover {
+    cursor: pointer;
+}
+
+.Back {
+    float: left;
+}
+
+.Next {
+    float: right;
+}
+
+/** Connect **/
+
+#ConnectBox p {
+    padding-top: 20px;
 }
 
 #icons p {

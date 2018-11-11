@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <title>Evenson Homepage</title>
     <link href="main.css" type="text/css" rel="stylesheet" />
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="site.con.js"></script>
+    <script>
+        $(document).ready(function() {
+            showSlides(currentSlide);
+        })
+    </script>
 </head>
 <body>
 <header>
@@ -44,7 +51,7 @@
             <h3>Education</h3>
             <div>
                 <div class="Left">
-                    <p>Michigan State University</p>
+                    <p><b>Michigan State University</b></p>
                     <p>Bachelor's Degree</p>
                     <p>Major: Computer Science</p>
                     <p>Minor: Economics</p>
@@ -52,18 +59,24 @@
                     <p>2015 - May 2019</p>
                 </div>
                 <div class="Right">
-                    <p></p>
+                    <p>At Michigan State, we start our computer science degree with a good foundation of courses in
+                        algorithms and data structures, software design, and computer architecture. I have expanded on that
+                        foundation by taking a variety of 400 level electives including Web Development and Android
+                        Application Development and am currently taking Software Engineering and Computer Networks. To
+                        see my full transcript please contact me via any of the sources in the <a href="#connect">connect</a>
+                        section.</p>
                 </div>
             </div>
             <div class="Rows">
                 <div class="Left">
+                    <p><b>American College of Thessaloniki</b></p>
                     <p>Study Abroad</p>
-                    <p>American College of Thessaloniki</p>
                     <p>Thessaloniki, Greece</p>
                     <p>Summer 2017</p>
                 </div>
                 <div class="Right">
-                    <p></p>
+                    <p>My six weeks in Thessaloniki Greece were spent studying Greek mythology and learning to sail
+                        while also studying greek culture outside of the classroom. </p>
                 </div>
             </div>
         </div>
@@ -71,42 +84,67 @@
             <h3>Experience</h3>
             <div>
                 <div class="Left">
-                    <p>Facility for Rare Isotope Beams</p>
+                    <p><b>Facility for Rare Isotope Beams</b></p>
+                    <p>East Lansing, MI</p>
                     <p>Student IT Assistant</p>
                     <p>July 2015 - Present</p>
                 </div>
                 <div class="Right">
                     <ul>
-                        <li>Managing the internal SharePoint website focusing on InfoPath approval forms connected to SharePoint workflow processes</li>
+                        <li>Managing the internal SharePoint website focusing on InfoPath approval forms connected to
+                            SharePoint workflow processes.</li>
                         <li>Working with users to improve their experience with SharePoint. </li>
+                        <li>Created our first InfoPath approval forms that are now used throughout most of our projects
+                            and by the majority of users in the lab.</li>
                     </ul>
                 </div>
             </div>
             <div class="Rows">
                 <div class="Left">
-                    <p>Auto-Owners Insurance</p>
+                    <p><b>Auto-Owners Insurance</b></p>
+                    <p>Lansing, MI</p>
                     <p>IT Intern</p>
                     <p>May 2018 - August 2018</p>
                 </div>
                 <div class="Right">
                     <ul>
-                        <li>Focused primarily on maintaining OpenShift applications and creating Jenkins pipelines to move applications between environments.</li>
+                        <li>Maintained OpenShift environments for applications.</li>
+                        <li>Created Jenkins pipelines to move applications between OpenShift environments.</li>
                     </ul>
                 </div>
             </div>
         </div>
+        <div class="SectionHeaders" id="BottomSpace"></div>
     </div>
 </div>
 <div class="MainContainer" id="ProjectsBox">
     <a name="Projects" class="anchor"></a>
     <h2>Projects</h2>
+
+    <div class="SlideshowBox">
+
+        <a class="Arrow Back" onClick="nextSlide(-1)">&#10094;</a>
+        <a class="Arrow Next" onClick="nextSlide(1)">&#10095;</a>
+
+        <div class="ProjectSlide" id="proj1">
+            <p><a href=""><img src="bummer.png" alt="project1" height="400" width="400"></a></p>
+            <h3>Minion Bummer!</h3>
+            <p class="ProjectDescription">test test test</p>
+        </div>
+
+        <div class="ProjectSlide" id="proj2">
+            <p><a href=""><img src="bummer.png" alt="project2" height="400" width="400"></a></p>
+            <p class="ProjectDescription">test test test 2</p>
+        </div>
+
+    </div>
 </div>
 <div class="MainContainer" id="ConnectBox">
     <a name="Connect" class="anchor"></a>
     <h2>Connect</h2>
     <div id="icons">
-        <p><a href=""><img src="In-2C-59px-R.png" alt="linkedinimg" height="59" width="70" /></a></p>
-        <p><a href=""><img src="f-ogo_RGB_HEX-58.png" alt="facebookimg" height="58" width="58"></a></p>
+        <p><a href="https://www.linkedin.com/in/david-evenson-msu19/"><img src="In-2C-59px-R.png" alt="linkedinimg" height="59" width="70" /></a></p>
+        <p><a href="https://www.facebook.com/david.evenson.77"><img src="f-ogo_RGB_HEX-58.png" alt="facebookimg" height="58" width="58"></a></p>
     </div>
     <div>
         <p><a href="mailto:david.g.evenson@gmail.com">david.g.evenson@gmail.com</a></p>
