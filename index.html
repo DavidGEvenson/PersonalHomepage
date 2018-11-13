@@ -8,7 +8,8 @@
     <script src="site.con.js"></script>
     <script>
         $(document).ready(function() {
-            showSlides(currentSlide);
+            showSlidesP(currentProjectSlide);
+            showSlidesM(currentMeSlide);
         })
     </script>
 </head>
@@ -123,11 +124,11 @@
 
     <div class="SlideshowBox">
 
-        <a class="Arrow Back" onClick="nextSlide(-1)">&#10094;</a>
-        <a class="Arrow Next" onClick="nextSlide(1)">&#10095;</a>
+        <a class="Arrow Back" onClick="nextSlideP(-1)">&#10094;</a>
+        <a class="Arrow Next" onClick="nextSlideP(1)">&#10095;</a>
 
         <div class="ProjectSlide" id="proj1">
-            <p><a href=""><img src="bummer.png" alt="project1" height="300" width="300"></a></p>
+            <p><a href="http://webdev.cse.msu.edu/~evenson6/project3/"><img src="bummer.png" alt="project1" height="300" width="300"></a></p>
             <h3>Minion Bummer!</h3>
             <p class="ProjectDescription">Our final project for my Web Development class was a group project
                 to create "Minion Bummer!", a combination of "Sorry!" and our professor's favorite theme, minions.
@@ -135,8 +136,11 @@
         </div>
 
         <div class="ProjectSlide" id="proj2">
-            <p><a href=""><img src="CSE435APA.jpg" alt="project2" height="450" width="300"></a></p>
-            <p class="ProjectDescription">test test test 2</p>
+            <p><a href="http://cse.msu.edu/~evenson6/cse435-project1/"><img src="CSE435project.png" alt="project2" height="300" width="542"></a></p>
+            <h3>Software Engineering Project Web Page</h3>
+            <p class="ProjectDescription">As the Artifacts Manager of our group in my Software Engineering class,
+                my main task was to log and track all development of the project. In other words I was in charge
+                of creating and maintaining the website.</p>
         </div>
 
         <div class="ProjectSlide" id="proj3">
@@ -146,9 +150,9 @@
     </div>
 
     <div class="SlideDots">
-        <span class="Dot" onclick="gotoSlide(0)"></span>
-        <span class="Dot" onclick="gotoSlide(1)"></span>
-        <span class="Dot" onclick="gotoSlide(2)"></span>
+        <span class="ProjectDot" onclick="gotoSlideP(0)"></span>
+        <span class="ProjectDot" onclick="gotoSlideP(1)"></span>
+        <span class="ProjectDot" onclick="gotoSlideP(2)"></span>
     </div>
 </div>
 <div class="MainContainer" id="ConnectBox">
@@ -161,6 +165,25 @@
     <div>
         <p><a href="mailto:david.g.evenson@gmail.com">david.g.evenson@gmail.com</a></p>
         <p>(517)488-4110</p>
+    </div>
+
+    <h3>Outside the Classroom!</h3>
+
+    <div class="SlideshowBox">
+
+        <a class="Arrow Back" onClick="nextSlideM(-1)">&#10094;</a>
+        <a class="Arrow Next" onClick="nextSlideM(1)">&#10095;</a>
+
+        <div class="MeSlide">
+            <p><img src="SailingBW.JPG" alt="project1" height="300" width="230"></p>
+            <h3></h3>
+            <p class="MeDescription"></p>
+        </div>
+
+    </div>
+
+    <div class="SlideDots">
+        <span class="MeDot" onclick="gotoSlideM(0)"></span>
     </div>
 </div>
 <footer>
