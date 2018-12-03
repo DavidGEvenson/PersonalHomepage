@@ -164,11 +164,11 @@ header a {
     font-size: 24px;
 }
 
-#Education a {
+#Education a, #ProfileHeader a {
     text-decoration: none;
 }
 
-#Education a:hover {
+#Education a:hover, #ProfileHeader a:hover {
     text-decoration: underline;
 }
 
